@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Hello World!
-tagline: Supporting tagline
+title: FORUFORO!
+tagline: 咖啡煮萝卜的小屋
 ---
 {% include JB/setup %}
 
