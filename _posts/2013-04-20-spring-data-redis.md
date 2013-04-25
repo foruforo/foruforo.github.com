@@ -7,26 +7,28 @@ tags: [spring,redis]
 ---
 {% include JB/setup %}
 
-##redis入门
+#redis入门
 
-###启停服务
+
+##redis简单介绍
+###1.启停服务
 启动redis ‘$ redis-server’
 
 客户端访问 '$ redis-cli'
 
  
 
-###redis是什么
+###2.redis是什么
 REmote DIctionary Server(Redis) 是一个由Salvatore Sanfilippo写的key-value存储系统。Redis提供了一些丰富的数据结构，包括 lists, sets, ordered sets 以及 hashes ，当然还有和Memcached一样的 strings结构.Redis当然还包括了对这些数据结构的丰富操作。
 
-###redis的优点
+###3.redis的优点
 
 1. 性能极高 – Redis能支持超过 100K+ 每秒的读写频率。
 2. 丰富的数据类型 – Redis支持二进制案例的 Strings, Lists, Hashes, Sets 及 Ordered Sets 数据类型操作。
 3. 原子 – Redis的所有操作都是原子性的，同时Redis还支持对几个操作全并后的原子性执行。
 4. 丰富的特性 – Redis还支持 publish/subscribe, 通知, key 过期等等特性。
 
-###redis的数据类型
+###4.redis的数据类型
 
 
 ####String类型
@@ -71,7 +73,7 @@ String类型还支持对其部分的修改和获取操作
     redis 127.0.0.1:6379> SUBSTR name 0 3
     "John"
 
-###List
+####List
 
 Redis能够将数据存储成一个链表，并能对这个链表进行丰富的操作
 
@@ -131,7 +133,7 @@ Redis也支持很多修改操作
     redis 127.0.0.1:6379> LRANGE students 0 1
     1) "Captain Kirk"
 
-###Sets
+####Sets
 
 Redis能够将一系列不重复的值存储成一个集合
 
@@ -184,7 +186,7 @@ Redis还支持对集合的子交并补等操作
     1) "crow"
     2) "pigeon"
 
-###Sorted Sets
+####Sorted Sets
 
 Sorted Sets和Sets结构相似，不同的是存在Sorted Sets中的数据会有一个score属性，并会在写入时就按这个score排好序。
 
@@ -222,7 +224,7 @@ Sorted Sets和Sets结构相似，不同的是存在Sorted Sets中的数据会有
     3) "sat"
     4) "sun"
 
-###Hash
+####Hash
 
 Redis能够存储key对多个属性的数据（比如user1.uname user1.passwd）
 
@@ -263,7 +265,7 @@ Hash数据结构能够批量修改和获取
 
 Redis支持这样一种特性，你可以将数据推到某个信息管道中，然后其它人可以通过订阅这些管道来获取推送过来的信息。
 
-###订阅信息管道
+###1.订阅信息管道
 
 ####订阅信息管道
 用一个客户端订阅管道
@@ -328,8 +330,8 @@ Redis支持这样一种特性，你可以将数据推到某个信息管道中，
     3) "channeltwo"
     4) "world"
 
----
-###数据过期设置
+
+###2.数据过期设置
 
 Redis支持按key设置过期时间，过期后值将被删除（在客户端看来是被删除了的）
 
@@ -423,7 +425,7 @@ Redis本身支持一些简单的组合型的命令，比如以NX结尾命令都�
 
 Redis的所有数据都存储在内存中，但是他也提供对这些数据的持久化。
 
-###数据快照
+###1.数据快照
 
 数据快照的原理是将整个Redis中存的所有数据遍历一遍存到一个扩展名为rdb的数据文件中。通过SAVE命令可以调用这个过程。
 
@@ -440,7 +442,7 @@ Redis的所有数据都存储在内存中，但是他也提供对这些数据的
 
 ‘/usr/local/var/db/redis/dump.rdb’
 
-### Append-Only File（追加式的操作日志记录）
+### 2.Append-Only File（追加式的操作日志记录）
 
 Redis还支持一种追加式的操作日志记录，叫append only file，其日志文件以aof结局，我们一般各为aof文件。要开启aof日志的记录，你需要在配置文件中进行如下设置：
 
