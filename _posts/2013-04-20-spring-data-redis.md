@@ -3,7 +3,7 @@ layout: post
 title: "redis 简易教程"
 description: "redis 简易教程"
 category: 
-tags: [spring,redis]
+tags: [spring, redis]
 ---
 {% include JB/setup %}
 

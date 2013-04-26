@@ -3,7 +3,7 @@ layout: post
 title: "maven plugin的开发"
 description: ""
 category: 
-tags: [maven,jee,plugin]
+tags: [maven, jee, plugin]
 ---
 {% include JB/setup %}
 
@@ -134,9 +134,9 @@ process-test-resources | 处理测试资源   | 可以处理、转换和重新�
 test-compile   | 测试编译  |  编译单元测试的源码。
 test   | 测试  | 运行编译过的单元测试并累计结果。
 package | 打包 | 将可执行的二进制文件打包到一个分布式归档文件中，如
-pre-integration-test |   前集成测试、准备集成测试。这种情况下的集成测试是指在一个受到一定控制的模拟的真实部署环境中测试代码。这一步能将归档文件部署到一个服务器上执行。 | 
+pre-integration-test |   前集成测试、准备集成测试。这种情况下的集成测试是指在一个受到一定控制的模拟的真实部署环境中测试代码。这一步能将归档文件部署到一个服务器上执行。 |&nbsp;
 integration-test  |   集成测试  |  执行真正的集成测试。
-post-integration-test |  后集成测试、解除集成测试准备。这一步涉及测试环境重置或重新初始化。|    
+post-integration-test |  后集成测试、解除集成测试准备。这一步涉及测试环境重置或重新初始化。| &nbsp;
 verify | 检验 | 检验可部署归档的有效性和完整性。过了这个阶段，将安装该归档。
 install | 安装  | 将该归档添加到本地Maven目录。这一步让其他可能依赖该归档的模块可以使用它。
 deploy  | 部署  | 将该归档添加到远程Maven目录。这一步让这个工件能为更多的人所用。

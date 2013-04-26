@@ -3,11 +3,11 @@ layout: post
 title: "appfuse startup 的一些问题"
 description: ""
 category: 
-tags: [jee,appfuse]
+tags: [jee, appfuse]
 ---
 {% include JB/setup %}
 
-#appfuse 的一些问题
+
 
 ##tomcat数据库连接问题
 用appfuse建立个基本的startup项目，在tomcat 7 运行后发现报如下错误
@@ -55,4 +55,13 @@ dbcp有个bug,见[DBCP-332](https://issues.apache.org/jira/browse/DBCP-332),现�
                 <filtering>true</filtering>
         </resource>
 
+##appfuse maven plugin
+网上基本上都查不到model生成时自定义包的方法，查看了下源代码，其实配置也挺简单的。model的生成，在pom.xml文件中修改一下 appfuse-maven-plugin的插件的配置。
 
+    <componentProperties>
+            <implementation>annotationconfiguration</implementation>
+            <revengfile>src/main/resources/hibernate.reveng.xml</revengfile>
+            <packagename>xx.xx.xx.model.subpackage</packagename>
+     </componentProperties>
+
+hibernate.reveng.xml不配置的话回自动在test里面生产一个默认的文件。这个是用来配置生成那些表的，网上讲的比较详细。
