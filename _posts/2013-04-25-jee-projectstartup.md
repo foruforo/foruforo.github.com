@@ -12,7 +12,7 @@ tags: [jee,appfuse]
 ##tomcat数据库连接问题
 用appfuse建立个基本的startup项目，在tomcat 7 运行后发现报如下错误
 
->registered the JDBC driver [oracle.jdbc.driver.OracleDriver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+>registered the JDBC driver \[oracle.jdbc.driver.OracleDriver\] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
 
 上网查找有人说是新版tomcat的问题，有两种解决方案
 
