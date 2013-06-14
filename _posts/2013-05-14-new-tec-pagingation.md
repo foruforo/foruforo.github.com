@@ -5,8 +5,6 @@ description: ""
 category: 
 tags: [jee]
 ---
-{% include JB/setup %}
-
 #通用分页设计
 
 ##页面分页对象的设计
