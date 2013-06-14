@@ -7,14 +7,16 @@ tagline: 咖啡煮萝卜的小屋
 
 
 
-<ul>
+<div class="well">
   {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
+   <div class="hero-unit">
+      <strong>{{ post.title }}</strong>
+      
       <p>{{ post.excerpt }}</p>
-    </li>
+      <a href="{{ post.url }}">more...</a>
+    </div>
   {% endfor %}
-</ul>
+</div>
 
 
 
