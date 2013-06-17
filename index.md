@@ -5,11 +5,11 @@ tagline: 咖啡煮萝卜的小屋
 ---
 {% include JB/setup %}
 
-  {% for post in site.posts %}
+  {% for post in paginator.posts %}
    <div class="well">
       <strong><a href="{{ post.url }}">{{ post.title }}</a></strong>
       
-      <p>{{ post.excerpt}}</p>
+      <p>{{ post.content}}</p>
       
     </div>
   {% endfor %}

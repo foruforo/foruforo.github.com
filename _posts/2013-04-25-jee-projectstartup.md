@@ -2,7 +2,7 @@
 layout: post
 title: "appfuse startup 的一些问题"
 description: ""
-category: 
+category: j2ee
 tags: [jee, appfuse]
 ---
 {% include JB/setup %}

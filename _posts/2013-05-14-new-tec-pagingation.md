@@ -2,7 +2,7 @@
 layout: post
 title: "分页设计"
 description: ""
-category: 
+category: j2ee
 tags: [jee]
 ---
 #通用分页设计

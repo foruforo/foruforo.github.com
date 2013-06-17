@@ -2,7 +2,7 @@
 layout: post
 title: "Markdown book"
 description: ""
-category: 
+category: tec
 tags: [markdown]
 ---
 {% include JB/setup %}

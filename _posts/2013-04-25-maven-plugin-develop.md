@@ -2,7 +2,7 @@
 layout: post
 title: "maven plugin的开发"
 description: ""
-category: 
+category: j2ee
 tags: [maven, jee, plugin]
 ---
 {% include JB/setup %}

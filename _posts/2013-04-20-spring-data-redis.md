@@ -2,8 +2,8 @@
 layout: post
 title: "redis 简易教程"
 description: "redis 简易教程"
-category: 
-tags: [spring, redis]
+category: nosql
+tags: [spring, redis,nosql]
 ---
 {% include JB/setup %}
 
