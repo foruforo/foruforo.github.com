@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "创造一个自己的开发语言 （Lexer）"
-description: ""
+description: "词法分析器(Lexer)的作用就是把字符解析成单词(token)"
 category: learn
 tags: [tec]
 ---
@@ -85,3 +85,6 @@ Ragel是个有限状态机编译器，它将基于正则表达式的状态机编
 * [Min’s lexer (Java)](https://github.com/macournoyer/min/blob/master/src/min/lang/Scanner.rl)
 * [Potion’s lexer (C)](https://github.com/whymirror/potion/blob/fae2907ce1f4136da006029474e1cf761776e99b/core/pn-scan.rl)
 
+####PYTHON STYLE INDENTATION FOR AWESOME
+
+如果你要创建一个全功能的语言，你可能要用到上面的两种工具其中的一种。
