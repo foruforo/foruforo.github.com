@@ -97,7 +97,7 @@ Parsing Expression Grammars，是一个非常强大的编译复杂语言的工�
 
 ###CONNECTING THE LEXER AND PARSER IN AWESOME
 从头开始写个parser要比写个lexer难得多。 所以我们将用Yacc的ruby版本Racc作为Awesome的编译器。但是出于速度和更好的错误报告，大部分语言最后还是写了自己的编译器。
-提供给Racc的语法文件和yacc类似。file
+提供给Racc的语法文件和yacc类似。
 
 
 

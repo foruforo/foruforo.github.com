@@ -14,6 +14,12 @@ if 1 {
 print "The End"
 CODE
 
+code2=<<-CODE 
+def method (a, b) {
+  true
+}
+CODE
+
   tokens=[
     [:IF, "if"], [:NUMBER, 1],
     [:INBLOCK, 1],[:NEWLINE, "\n"],

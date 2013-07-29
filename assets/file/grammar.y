@@ -146,7 +146,7 @@ Expressions:
  
  # A block of indented code. You see here that all the hard work was done by the lexer
  Block:
- 	"{" Expressions "}"  {result = val[1]}	
+ 	INDENT Expressions DEDENT  {result = val[1]}	
  ;
  end
 
