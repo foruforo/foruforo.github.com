@@ -21,14 +21,15 @@ tags: [tec]
 像c和php(4以前)这样简单的运行时模型，所以的都以方法为中心。没有任何对象，并且所有的方法大多在同一个命名空间(namespace)下。他们很快就变得很混乱。
 
 ##CLASS-BASED
-class-based model是现在比较流行的运行时模型。像ava, Python, Ruby等等都是这种模型。
+class-based model是现在比较流行的运行时模型。像java, Python, Ruby等等都是这种模型。
 
 ##PROTOTYPE-BASED
 除了javascript以外,非 Prototype-based模式的语言已经相当的广泛和流行。这种模式是最容易实现也是最灵活的。因为所有的东西都是一个对象的clone.
 
 ##FUNCTIONAL
-像Lisp、Haskell、Scala、clojure、Erlang等都是functional模型。其根源是数学中的λ演算（lambda Calculus.).
+像Lisp、Haskell、Scala、clojure、Erlang等都是functional模型。其根源是数学中的λ演算（lambda Calculus).
 
 
-
+##OUR AWESOME RUNTIME
+因为大家对面向对象的编程模式比较熟悉，所有awesome也采用类似面向对象的运行时模式。例子中将定义对象、方法、类怎样存储和他们之间怎样相互配合和工作的.
 
