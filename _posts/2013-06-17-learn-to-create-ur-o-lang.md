@@ -5,6 +5,7 @@ description: "Creating your first programming language is easier than you think.
 category: learn
 tags: [tec]
 ---
+
 {% include JB/setup %}
 
 Marc 是个技术大牛。写了本书，叫《Create Your Own Freaking Awesome Programming Language》。ruby创始人Matz说他也很想读，CoffeeScript作者说他是看了这本书才创造了coffeescript的。一句话，Creating your first programming language is easier than you think.
